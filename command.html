@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>command</title>
+    </head>
+    <body style="background-image:url(bq.png); color:aqua;">
+        <h1><b>留下你的想法吧</b></h1>
+        <select>
+            <option value="喜欢">喜欢</option>
+            <option value="不喜欢">不喜欢</option>
+            <option value="不知道">不知道</option>
+        </select>
+    <form method="post">
+    留言:<br/>
+    <textarea name="command" id="command" style="width: max-content;">
+    </textarea><br/>
+    <input type="hidden" name="acticleid"
+    id="acticleid" value='<? echo $_GET["id"];?>'/>
+    <input type="submit" value="完成"/>
+    </form>
+    </body>
+</html>
